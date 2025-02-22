@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "new-solaris",
+	"version": "${version}",
+	"name": "New Solaris",
+	"description": "This mod adds things related to the New Solaris Faction made by N7Paddy!",
+	"authors": [
+		"N7Paddy!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/new-solaris/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lancer.newsolaris.NewSolaris"
+		],
+		"client": [
+			"net.lancer.newsolaris.NewSolarisClient"
+		],
+		"fabric-datagen": [
+			"net.lancer.newsolaris.NewSolarisDataGenerator"
+		]
+	},
+	"mixins": [
+		"new-solaris.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
