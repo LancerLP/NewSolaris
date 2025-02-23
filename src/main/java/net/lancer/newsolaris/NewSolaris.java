@@ -2,6 +2,8 @@ package net.lancer.newsolaris;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.lancer.newsolaris.Item.ModItemGroups;
+import net.lancer.newsolaris.Item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,7 @@ public class NewSolaris implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
